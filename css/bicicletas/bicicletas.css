@@ -76,8 +76,9 @@
 }
 
 @media (max-width: 800px) {
-  .bicicletas-bg {
-    background-image: var(--cor-11);
+  .bicicletas-bg:nth-child(odd) {
+    background-image: none;
+    background-color: var(--cor-11);
   }
   .bicicletas {
     grid-template-columns: 1fr;
@@ -85,18 +86,20 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-}
-
-@media (max-width: 600px) {
   .bicicletas-conteudo {
     grid-template-columns: 1fr;
   }
   .bicicletas ul {
-    font-size: 1rem;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 32px;
   }
   .bicicletas a {
     place-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas ul {
+    font-size: 1rem;
   }
 }
