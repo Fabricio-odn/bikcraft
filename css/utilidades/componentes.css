@@ -82,9 +82,10 @@
 /* titulo internos */
 
 .titulo-bg {
+  --padding: 60px;
   background-color: var(--cor-11);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
 .titulo p {
@@ -93,8 +94,7 @@
 
 @media (max-width: 800px) {
   .titulo-bg {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --padding: 40px;
   }
   .titulo p {
     font-size: 1rem;
